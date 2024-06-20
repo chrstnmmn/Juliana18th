@@ -4,27 +4,11 @@ const bodyElement = document.getElementById("mainContent");
 const mainPage = document.getElementById("mainPage");
 const preloader = document.getElementById("preloadScreen");
 
-document.addEventListener("DOMContentLoaded", ready);
-preloader.style.display = "block";
-mainPage.style.display = "none";
-bodyElement.style.display = "none";
-
-function ready() {
-  setTimeout(() => {
-    showMainPage();
-  }, 3000);
-} 
-
 window.onload = function () {
-  window.scrollTo({ top: targetY, behavior: "smooth" });
+  ScrollToTop();
   preloader.style.display = "none";
   bodyElement.style.display = "none";
 };
-
-function showMainPage() {
-  preloader.style.display = "none";
-  mainPage.style.display = "block";
-}
 
 function ScrollToTop() {
   window.scrollTo({ top: targetY, behavior: "smooth" });
@@ -42,17 +26,16 @@ function checkName() {
   if (name === "") {
     rejectText.style.display = "block";
     statement.innerHTML = "Enter your name first!";
-    window.scrollTo({ top: targetY, behavior: "smooth" });
+    ScrollToTop();
     setTimeout(() => {
       bodyElement.style.display = "none";
       rejectText.style.display = "none";
     }, 1000);
   } else if (!guestList[name]) {
     statement.innerHTML = "Sorry you are not invited.";
-    window.scrollTo({ top: targetY, behavior: "smooth" });
     rejectText.style.display = "block";
     userInput.value = "";
-    window.scrollTo({ top: targetY, behavior: "smooth" });
+    ScrollToTop();
     setTimeout(() => {
       bodyElement.style.display = "none";
       rejectText.style.display = "none";

@@ -8,11 +8,15 @@ body {
   background-color: #ff7891;
 }
 
+
+
 @media (width >= 360px) {
   /* ============================
         Loading Screen
 ============================ */
   #loadingscreenelements {
+    background-color: #ff7891;
+    z-index: 200;
     pointer-events: none;
   }
   #flowerIcon {
@@ -18024,9 +18028,6 @@ body {
 }
 
 @media (width >= 540px) {
-  .responsiveContainer {
-    max-width: 457px;
-  }
   /* ============================
         Loading Screen
 ============================ */
@@ -19149,4 +19150,52 @@ body {
   /* ============================
         Ending Page
 ============================ */
+}
+
+@media (width <= 600px) {
+  .deviceNotification h1 {
+    display: none;
+  }
+
+  .deviceNotification h2 {
+    display: none;
+  }
+  
+}
+
+@media (width > 600px) {
+  #mainpage {
+    display: none;
+  }
+  .deviceNotification h1{
+    color: #fbf9f9;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    font-family: "Pacifico";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 350px;
+    display: block;
+  }
+  .deviceNotification h2 {
+    display: none;
+  }
+}
+
+@media (width < 360px) {
+  #mainpage {
+    display: none;
+  }
+  .deviceNotification h2{
+    color: #fbf9f9;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    font-family: "Pacifico";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 350px;
+    display: block;
+  }
 }
