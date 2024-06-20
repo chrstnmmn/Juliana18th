@@ -8,6 +8,10 @@ body {
   background-color: #ff7891;
 }
 
+#mainContent {
+  display: none;
+}
+
 
 
 @media (width >= 360px) {
