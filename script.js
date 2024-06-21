@@ -65,7 +65,7 @@ const guestList = {
   //Table 01 (VIP)
   "Egay Merced": 1,
   "Tsay chai Merced": 1,
-  "Yollo Eulogio": 1,
+  "Yolly Eulogio": 1,
   "Marilou Merced": 1,
   "Sally Cadalin": 1,
   "Recto Furio": 1,
@@ -82,6 +82,7 @@ const guestList = {
   "Jomari Quijano": 1,
   "Aiden Quijano": 1,
   "Carlos Merced": 1,
+  "Gina Concepcion": 1,
 
   //Table 02
   "Edrich Merced": 2,
